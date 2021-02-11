@@ -30,9 +30,8 @@ public class CustomerDataIngestor {
 		String esPort = args[2];
 		String indexName = args[3];
 		
-		//JavaRDD<Row> rddOfRows = CSVParser.parseCSVFileWithLocalESCluster(args);
-		JavaRDD<CustomerDO> rddOfRows = CSVParser.parseCSVFileWithRemoteESCluster(args);
-		
+		CSVParser csvParser = new CSVParser(fileName,esNode,esPort);
+		JavaRDD<CustomerDO> rddOfRows = csvParser.parseCSVFileWithRemoteESCluster(args);
 		new ElasticSearchIndexer(indexName).index(rddOfRows);
 		
 		LOGGER.info("Ending thee ETL job");
