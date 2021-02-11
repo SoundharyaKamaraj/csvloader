@@ -44,7 +44,7 @@ public class CSVLoderImpl {
 					Integer.valueOf(clientDOObj[3]), clientDOObj[4]);
 		});
 
-		JavaEsSpark.saveToEs(customerDOObj, "/Customer");
+		JavaEsSpark.saveToEs(customerDOObj, "/customer");
 	}
 
 }

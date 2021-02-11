@@ -1,0 +1,500 @@
+{
+  "took" : 14,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 1000,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "aOtij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Bill",
+          "state" : "MA",
+          "age" : 60,
+          "id" : 501,
+          "last_name" : "Klausen"
+        }
+      },
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "aetij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Pembroke",
+          "state" : "IL",
+          "age" : 54,
+          "id" : 502,
+          "last_name" : "Jennrich"
+        }
+      },
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "a-tij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Marcia",
+          "state" : "OK",
+          "age" : 52,
+          "id" : 503,
+          "last_name" : "Mertel"
+        }
+      },
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "betij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Adelina",
+          "state" : "TX",
+          "age" : 27,
+          "id" : 504,
+          "last_name" : "Verden"
+        }
+      },
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "b-tij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Flin",
+          "state" : "IN",
+          "age" : 62,
+          "id" : 505,
+          "last_name" : "Roddick"
+        }
+      },
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "detij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Leann",
+          "state" : "SC",
+          "age" : 49,
+          "id" : 506,
+          "last_name" : "Hamstead"
+        }
+      },
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "dutij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Brandtr",
+          "state" : "NY",
+          "age" : 44,
+          "id" : 507,
+          "last_name" : "Shovelton"
+        }
+      },
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "d-tij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Fern",
+          "state" : "MI",
+          "age" : 28,
+          "id" : 508,
+          "last_name" : "Branchflower"
+        }
+      },
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "eOtij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Clemmie",
+          "state" : "MA",
+          "age" : 58,
+          "id" : 509,
+          "last_name" : "Sandbach"
+        }
+      },
+      {
+        "_index" : "customer",
+        "_type" : "_doc",
+        "_id" : "eetij3cB77Ck298Dk5rm",
+        "_score" : 1.0,
+        "_source" : {
+          "first_name" : "Elsa",
+          "state" : "FL",
+          "age" : 26,
+          "id" : 510,
+          "last_name" : "Mertin"
+        }
+      }
+    ]
+  },
+  "aggregations" : {
+    "averageByStateId" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "TX",
+          "doc_count" : 110,
+          "average" : {
+            "value" : 52.127272727272725
+          }
+        },
+        {
+          "key" : "CA",
+          "doc_count" : 108,
+          "average" : {
+            "value" : 47.175925925925924
+          }
+        },
+        {
+          "key" : "FL",
+          "doc_count" : 71,
+          "average" : {
+            "value" : 49.67605633802817
+          }
+        },
+        {
+          "key" : "NY",
+          "doc_count" : 65,
+          "average" : {
+            "value" : 53.738461538461536
+          }
+        },
+        {
+          "key" : "VA",
+          "doc_count" : 46,
+          "average" : {
+            "value" : 49.06521739130435
+          }
+        },
+        {
+          "key" : "DC",
+          "doc_count" : 36,
+          "average" : {
+            "value" : 44.97222222222222
+          }
+        },
+        {
+          "key" : "IL",
+          "doc_count" : 32,
+          "average" : {
+            "value" : 50.15625
+          }
+        },
+        {
+          "key" : "OH",
+          "doc_count" : 31,
+          "average" : {
+            "value" : 46.064516129032256
+          }
+        },
+        {
+          "key" : "MN",
+          "doc_count" : 29,
+          "average" : {
+            "value" : 44.58620689655172
+          }
+        },
+        {
+          "key" : "PA",
+          "doc_count" : 28,
+          "average" : {
+            "value" : 50.42857142857143
+          }
+        },
+        {
+          "key" : "TN",
+          "doc_count" : 27,
+          "average" : {
+            "value" : 49.666666666666664
+          }
+        },
+        {
+          "key" : "MI",
+          "doc_count" : 24,
+          "average" : {
+            "value" : 51.083333333333336
+          }
+        },
+        {
+          "key" : "AL",
+          "doc_count" : 23,
+          "average" : {
+            "value" : 48.69565217391305
+          }
+        },
+        {
+          "key" : "GA",
+          "doc_count" : 23,
+          "average" : {
+            "value" : 44.56521739130435
+          }
+        },
+        {
+          "key" : "IN",
+          "doc_count" : 22,
+          "average" : {
+            "value" : 51.72727272727273
+          }
+        },
+        {
+          "key" : "MO",
+          "doc_count" : 22,
+          "average" : {
+            "value" : 46.86363636363637
+          }
+        },
+        {
+          "key" : "AZ",
+          "doc_count" : 20,
+          "average" : {
+            "value" : 50.7
+          }
+        },
+        {
+          "key" : "KY",
+          "doc_count" : 20,
+          "average" : {
+            "value" : 45.35
+          }
+        },
+        {
+          "key" : "KS",
+          "doc_count" : 19,
+          "average" : {
+            "value" : 48.0
+          }
+        },
+        {
+          "key" : "CO",
+          "doc_count" : 18,
+          "average" : {
+            "value" : 46.111111111111114
+          }
+        },
+        {
+          "key" : "NC",
+          "doc_count" : 18,
+          "average" : {
+            "value" : 52.27777777777778
+          }
+        },
+        {
+          "key" : "OK",
+          "doc_count" : 17,
+          "average" : {
+            "value" : 52.76470588235294
+          }
+        },
+        {
+          "key" : "LA",
+          "doc_count" : 16,
+          "average" : {
+            "value" : 53.5625
+          }
+        },
+        {
+          "key" : "NV",
+          "doc_count" : 16,
+          "average" : {
+            "value" : 51.625
+          }
+        },
+        {
+          "key" : "WA",
+          "doc_count" : 14,
+          "average" : {
+            "value" : 50.857142857142854
+          }
+        },
+        {
+          "key" : "MD",
+          "doc_count" : 13,
+          "average" : {
+            "value" : 41.76923076923077
+          }
+        },
+        {
+          "key" : "MA",
+          "doc_count" : 12,
+          "average" : {
+            "value" : 58.666666666666664
+          }
+        },
+        {
+          "key" : "IA",
+          "doc_count" : 11,
+          "average" : {
+            "value" : 46.27272727272727
+          }
+        },
+        {
+          "key" : "SC",
+          "doc_count" : 11,
+          "average" : {
+            "value" : 37.18181818181818
+          }
+        },
+        {
+          "key" : "WI",
+          "doc_count" : 11,
+          "average" : {
+            "value" : 50.09090909090909
+          }
+        },
+        {
+          "key" : "WV",
+          "doc_count" : 9,
+          "average" : {
+            "value" : 40.666666666666664
+          }
+        },
+        {
+          "key" : "CT",
+          "doc_count" : 8,
+          "average" : {
+            "value" : 48.75
+          }
+        },
+        {
+          "key" : "MS",
+          "doc_count" : 7,
+          "average" : {
+            "value" : 47.714285714285715
+          }
+        },
+        {
+          "key" : "NE",
+          "doc_count" : 7,
+          "average" : {
+            "value" : 49.857142857142854
+          }
+        },
+        {
+          "key" : "NJ",
+          "doc_count" : 7,
+          "average" : {
+            "value" : 50.714285714285715
+          }
+        },
+        {
+          "key" : "ID",
+          "doc_count" : 6,
+          "average" : {
+            "value" : 59.5
+          }
+        },
+        {
+          "key" : "ND",
+          "doc_count" : 6,
+          "average" : {
+            "value" : 49.666666666666664
+          }
+        },
+        {
+          "key" : "OR",
+          "doc_count" : 6,
+          "average" : {
+            "value" : 47.0
+          }
+        },
+        {
+          "key" : "AK",
+          "doc_count" : 5,
+          "average" : {
+            "value" : 33.6
+          }
+        },
+        {
+          "key" : "SD",
+          "doc_count" : 5,
+          "average" : {
+            "value" : 45.0
+          }
+        },
+        {
+          "key" : "UT",
+          "doc_count" : 5,
+          "average" : {
+            "value" : 48.0
+          }
+        },
+        {
+          "key" : "NM",
+          "doc_count" : 4,
+          "average" : {
+            "value" : 56.5
+          }
+        },
+        {
+          "key" : "AR",
+          "doc_count" : 3,
+          "average" : {
+            "value" : 32.0
+          }
+        },
+        {
+          "key" : "HI",
+          "doc_count" : 3,
+          "average" : {
+            "value" : 36.666666666666664
+          }
+        },
+        {
+          "key" : "WY",
+          "doc_count" : 2,
+          "average" : {
+            "value" : 64.0
+          }
+        },
+        {
+          "key" : "DE",
+          "doc_count" : 1,
+          "average" : {
+            "value" : 80.0
+          }
+        },
+        {
+          "key" : "ME",
+          "doc_count" : 1,
+          "average" : {
+            "value" : 44.0
+          }
+        },
+        {
+          "key" : "MT",
+          "doc_count" : 1,
+          "average" : {
+            "value" : 33.0
+          }
+        },
+        {
+          "key" : "RI",
+          "doc_count" : 1,
+          "average" : {
+            "value" : 35.0
+          }
+        }
+      ]
+    }
+  }
+}
