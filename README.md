@@ -43,8 +43,10 @@ curl -XGET "http://localhost:9200/customer/_search?pretty" -H 'Content-Type: app
 }
 '
 ```
+<details>
+<summary>Sample Output</summary>
+<p>
 
-Sample Output
 ```
 {
    "took":8,
@@ -417,4 +419,7 @@ Sample Output
       }
    }
 }
-```
+\```
+</p>
+</details>
+
