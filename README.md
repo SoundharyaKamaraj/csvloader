@@ -17,9 +17,26 @@ $ mvn clean install
 ```
 ## Submitting Spark Job
 ```
-spark-submit --class com.evertrue.spark_elasticsearch_project.csvloader.CustomerDataIngestor --master spark://<Spark_Master>:7077 evertrue_csvloader-jar-with-dependencies.jar data.csv
+./bin/spark-submit --class com.evertrue.spark_elasticsearch_project.csvloader.CustomerDataIngestor  \
+ --master spark://<Spark_Master>:7077 \
+ evertrue_csvloader-jar-with-dependencies.jar  \
+<CSV FILE NAME> \
+<ES:HOSTNAME>  \
+<ES:PORT> \
+<IndexName> \
+/
 ```
-Replace Spark_Master with Master Hostname. Eg: spark://Soundharyas-MacBook-Pro.local:7077
+For Eg:
+```
+./bin/spark-submit --class com.evertrue.spark_elasticsearch_project.csvloader.CustomerDataIngestor  \
+ --master spark://Soundharyas-MacBook-Pro.local:7077 \
+ evertrue_csvloader-jar-with-dependencies.jar  \
+data.csv \
+localhost  \
+9200 \
+customer \
+/
+```
 ## Querying Elasticsearch 
 ```
 curl -XGET "http://localhost:9200/customer/_search?pretty" -H 'Content-Type: application/json' -d'
@@ -419,7 +436,7 @@ curl -XGET "http://localhost:9200/customer/_search?pretty" -H 'Content-Type: app
       }
    }
 }
-\```
+```
 </p>
 </details>
 
